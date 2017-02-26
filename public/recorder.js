@@ -1,5 +1,5 @@
 (function(window) {
-  var client = new BinaryClient('ws://localhost:9001');
+  var client = new BinaryClient('ws://' + EXTERNAL_APP_HOST + ':' + WEB_SOCK_PORT);
 
   client.on('open', function() {
     window.Stream = client.createStream();

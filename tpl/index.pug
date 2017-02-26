@@ -6,4 +6,7 @@ html
     body
         button(onclick="startRecording()") Start Recording
         button(onclick="stopRecording()") Stop Recording
+        script.
+            window.EXTERNAL_APP_HOST = "#{EXTERNAL_APP_HOST}"
+            window.WEB_SOCK_PORT = "#{WEB_SOCK_PORT}"
         script(src="recorder.js")
